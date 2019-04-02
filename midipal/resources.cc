@@ -254,7 +254,7 @@ static const prog_char str_res_fre[] PROGMEM = "fre";
 static const prog_char str_res_prg[] PROGMEM = "prg";
 
 
-PROGMEM const prog_char* string_table[] = {
+const prog_char * const string_table[] PROGMEM = {
   str_res_syncltch,
   str_res_polyseq,
   str_res_arpeggio,
@@ -652,7 +652,7 @@ const prog_uint16_t lut_res_increments[] PROGMEM = {
 };
 
 
-PROGMEM const prog_uint16_t* lookup_table_table[] = {
+const prog_uint16_t * const lookup_table_table[] PROGMEM = {
   lut_res_arpeggiator_patterns,
   lut_res_drum_patterns,
   lut_res_groove_swing,
