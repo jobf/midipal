@@ -51,7 +51,7 @@ static const prog_char str_res_settings[] PROGMEM = "settings";
 static const prog_char str_res_notenuke[] PROGMEM = "notenuke";
 static const prog_char str_res_sysxdump[] PROGMEM = "sysxdump";
 static const prog_char str_res__reset_[] PROGMEM = "!reset!";
-static const prog_char str_res___v1_4__[] PROGMEM = "¥ v1.4 ¥";
+static const prog_char str_res___v1_4__[] PROGMEM = "ï¿½ v1.4 ï¿½";
 static const prog_char str_res_sndoff[] PROGMEM = "sndOff";
 static const prog_char str_res_rstctr[] PROGMEM = "rstCtr";
 static const prog_char str_res_lclctr[] PROGMEM = "lclCtr";
@@ -707,7 +707,7 @@ const prog_uint8_t chr_res_sequencer_icons[] PROGMEM = {
 };
 
 
-const prog_uint8_t* character_table[] = {
+const prog_uint8_t * const character_table[] PROGMEM = {
   chr_res_digits_10,
   chr_res_sequencer_icons,
 };
@@ -991,7 +991,7 @@ const prog_uint8_t wav_res_lfo_waveforms[] PROGMEM = {
 };
 
 
-const prog_uint8_t* waveform_table[] = {
+const prog_uint8_t * const waveform_table[] PROGMEM = {
   wav_res_lfo_waveforms,
 };
 
